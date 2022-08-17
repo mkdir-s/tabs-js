@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: arial;
+    line-height: 1.6;
+}
+
+.tabs {
+    max-width: 700px;
+    background-color: #eee;
+    margin: 50px auto;
+}
+.tabs__header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.25rem;
+}
+.tab-nav__item {
+    padding: 10px 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s;
+    border-bottom: 1px solid transparent;
+}
+.tab-nav__item:hover,
+.tab-nav__item._active {
+    background-color: #ddd;
+    border-bottom: 1px solid green;
+}
+
+.tabs__body {
+    padding: 25px 20px;
+}
+.tab__content {
+    display: none;
+}
+.tab__content._active {
+    display: block;
+}
